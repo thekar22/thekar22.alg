@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-/* line 21, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* line 21, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 html {
   font-family: "Open Sans";
   position: relative;
@@ -8,7 +8,7 @@ html {
   background-image: url("../../resources/graphics/background.png");
   background-repeat: repeat-y repeat-x; }
 
-/* line 31, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 31, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 body {
   font-family: "Open Sans";
   position: relative;
@@ -16,11 +16,11 @@ body {
   width: 100%;
   margin: 0; }
 
-/* line 39, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 39, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 input[type=checkbox] {
   display: none; }
 
-/* line 43, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 43, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .container {
   position: absolute;
   height: 596px;
@@ -32,13 +32,13 @@ input[type=checkbox] {
   transform: translate(-50%, -52%);
   box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.2), 3px 3px 3px rgba(0, 0, 0, 0.2); }
 
-/* line 59, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 59, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .search {
   position: relative;
   height: 100px;
   background: #1C6A8E; }
 
-/* line 65, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 65, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 #query {
   position: absolute;
   height: 50px;
@@ -50,12 +50,12 @@ input[type=checkbox] {
   border-radius: 3px;
   transform: translate(-50%, -50%); }
 
-/* line 79, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 79, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 input {
   -webkit-appearance: none;
   box-shadow: none !important; }
 
-/* line 83, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 83, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 textarea, input {
   margin: 0;
   padding: 10px;
@@ -63,27 +63,27 @@ textarea, input {
   font-size: 18px;
   font-weight: 300; }
 
-/* line 94, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 94, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .main {
   display: flex;
   height: 496px; }
 
-/* line 101, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 101, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .facet-column {
   min-width: 232px;
   padding: 38px 30px;
   overflow-y: auto;
   overflow-x: hidden;
   border-right: 1px solid rgba(0, 0, 0, 0.1); }
-  /* line 108, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 108, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .facet-column::-webkit-scrollbar {
     display: none; }
 
-/* line 115, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 115, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 #stats {
   position: relative;
   font-weight: 900; }
-  /* line 119, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 119, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   #stats:after {
     position: absolute;
     height: 1px;
@@ -93,43 +93,43 @@ textarea, input {
     bottom: 0px;
     background: rgba(0, 0, 0, 0.1); }
 
-/* line 131, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 131, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .found-time {
   font-size: 14px;
   font-weight: 100; }
 
-/* line 136, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 136, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .hits-column {
   padding: 38px 40px 40px;
   padding-right: 30px;
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%; }
-  /* line 143, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 143, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hits-column::-webkit-scrollbar {
     display: none; }
 
-/* line 148, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 148, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .hit-container {
   margin-top: 15px; }
 
-/* line 152, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 152, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .hit {
   font-size: 0;
   padding: 8px 0;
   cursor: pointer; }
 
-/* line 158, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 158, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .hit-image {
   display: inline-block;
   width: 90px; }
-  /* line 162, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 162, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hit-image img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     max-width: 100%;
     border-radius: 5px; }
 
-/* line 169, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 169, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .hit-content {
   font-size: 13px;
   font-weight: 300;
@@ -138,29 +138,29 @@ textarea, input {
   margin-left: 20px;
   margin-top: -3px;
   vertical-align: top; }
-  /* line 178, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 178, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hit-content .hit-row {
     position: relative;
     margin-bottom: 5px; }
-  /* line 183, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 183, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hit-content .hit-price {
     font-weight: normal;
     margin-top: 0; }
-  /* line 188, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 188, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hit-content .hit-name {
     margin-top: 0;
     font-size: 18px;
     font-weight: 800; }
-  /* line 194, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 194, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hit-content .hit-rating {
     color: #ff9b4d;
     font-size: 16px; }
-  /* line 199, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 199, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hit-content .hit-details {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.4); }
 
-/* line 205, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 205, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .show-more {
   display: block;
   height: 42px;
@@ -173,17 +173,17 @@ textarea, input {
   color: rgba(0, 0, 0, 0.6);
   cursor: pointer; }
 
-/* line 220, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 220, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .facet-wrapper {
   margin-bottom: 20px; }
 
-/* line 224, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 224, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .facet-title {
   font-weight: 900;
   font-size: 16px;
   margin-bottom: 10px; }
 
-/* line 230, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 230, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .facet-item {
   margin-left: 15px;
   margin-bottom: -1px;
@@ -191,13 +191,13 @@ textarea, input {
   position: relative;
   height: 25px;
   cursor: pointer; }
-  /* line 238, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 238, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .facet-item:hover {
     color: white; }
-    /* line 241, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+    /* line 241, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
     .facet-item:hover .facet-value {
       color: white; }
-  /* line 246, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 246, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .facet-item:hover:before {
     content: '';
     position: absolute;
@@ -209,16 +209,16 @@ textarea, input {
     transform: translate(-50%, -58%);
     border-radius: 4px;
     opacity: 0.8; }
-  /* line 249, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 249, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .facet-item.rating {
     width: 100px; }
-  /* line 252, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 252, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .facet-item.checked {
     color: white; }
-    /* line 255, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+    /* line 255, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
     .facet-item.checked .facet-value {
       color: white; }
-  /* line 259, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 259, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .facet-item.checked:before {
     content: '';
     position: absolute;
@@ -231,13 +231,13 @@ textarea, input {
     border-radius: 4px;
     opacity: 0.8; }
 
-/* line 264, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 264, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .facet-key {
   font-size: 15px;
   position: absolute;
   display: inline-block; }
 
-/* line 270, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 270, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .facet-value {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.4);
@@ -245,7 +245,7 @@ textarea, input {
   position: absolute;
   right: 0px; }
 
-/* line 278, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 278, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .reviews-count {
   color: rgba(0, 0, 0, 0.4);
   right: 0px;
@@ -254,28 +254,28 @@ textarea, input {
   position: absolute;
   left: 130px; }
 
-/* line 289, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 289, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .stars_facet > label:nth-child(1) {
   margin-top: 15px; }
 
-/* line 293, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 293, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .stars_facet {
   width: 130px; }
 
-/* line 297, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 297, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .star-rating {
   position: absolute;
   top: 2px;
   left: 29px; }
 
-/* line 303, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 303, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 span.stars {
   display: inline-block;
   width: 100px;
   background: url("../../resources/graphics/stars-icons.png") 0 0px no-repeat;
   background-size: 100px 36px;
   height: 18px; }
-  /* line 309, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 309, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   span.stars span {
     display: inline-block;
     height: 17px;
@@ -283,26 +283,26 @@ span.stars {
     background: url("../../resources/graphics/stars-icons.png") 0 -18px no-repeat;
     background-size: 100px 36px; }
 
-/* line 318, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+/* line 318, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
 .mobile-show-facets {
   display: none; }
 
 @media screen and (max-width: 959px) {
-  /* line 324, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 324, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .container {
     width: 100%;
     height: 100%;
     min-width: 350px; }
-  /* line 330, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 330, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .main {
     position: relative;
     display: block;
     overflow: scroll;
     height: 530px; }
-    /* line 335, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+    /* line 335, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
     .main::-webkit-scrollbar {
       display: none; }
-  /* line 343, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 343, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .mobile-show-facets {
     position: relative;
     height: 40px;
@@ -312,27 +312,27 @@ span.stars {
     background: #6faac7;
     margin: 0 auto;
     cursor: pointer; }
-  /* line 354, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 354, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   #query {
     font-size: 14px; }
-  /* line 358, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 358, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .facet-column {
     display: none;
     margin: 0 auto;
     border-right: none;
     padding: 25px 30px; }
-  /* line 365, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 365, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hits-column {
     position: relative;
     padding: 20px;
     box-sizing: border-box; }
-  /* line 371, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 371, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hit-content {
     width: 60%; }
-    /* line 374, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+    /* line 374, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
     .hit-content .hit-name {
       font-size: 15px; }
-    /* line 378, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+    /* line 378, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
     .hit-content .hit-details {
       width: 100%;
       min-width: 200px;
@@ -341,32 +341,32 @@ span.stars {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden; }
-  /* line 389, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 389, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .reviews-count {
     font-size: 13px;
     margin-top: 2px; }
-  /* line 394, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 394, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .show-facet-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  /* line 401, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 401, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .show-more {
     margin: 15px auto 0px; }
-  /* line 405, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 405, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .review-count-text {
     display: none; }
-  /* line 409, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 409, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .found-time {
     display: none; }
-  /* line 413, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 413, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   #stats:after {
     display: none; }
-  /* line 419, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 419, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .hidden {
     display: none; }
-  /* line 423, /Users/kylerego1/Documents/Development/Interview/Algolia/project-files/assets/scss/main.scss */
+  /* line 423, /Users/kylerego1/Documents/Development/Interview/Algolia/thekar22.github.io/assets/scss/main.scss */
   .shown {
     display: block; } }
 
