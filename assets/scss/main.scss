@@ -25,7 +25,6 @@ html {
 	width: 100%;
 
     background-image: url("../../resources/graphics/background.png");
-    background-repeat: repeat-y repeat-x;
 }
 
 body {
@@ -235,17 +234,6 @@ textarea, input {
 	height: 25px;
 	cursor: pointer;
 	
-	&:hover {
-		color: white;
-
-		.facet-value {
-			color: white;
-		}
-	}
-
-	&:hover:before {
-		@include hover(40,151,197,1.0);
-	}
 	&.rating {
 		width: 100px;
 	}
@@ -260,6 +248,18 @@ textarea, input {
 		@include hover(25,136,182,1.0);
 	}
 }
+
+.no-touch .facet-item:hover {
+	color: white;
+	.facet-value {
+		color: white;
+	}
+}
+
+.no-touch .facet-item:hover:before {
+	@include hover(40,151,197,1.0);
+}
+
 
 .facet-key {
 	font-size: 15px;
@@ -321,10 +321,15 @@ span.stars {
 
 /// media query for any non-desktop device
 @media screen and (max-width: 959px) {
+	html {
+		background-image: none;
+	}
+
 	.container {
 		width: 100%;
 		height: 100%;
-		min-width: 350px;
+		min-width: 320px;
+		box-shadow: none;
 	}
 
 	.main {
@@ -336,8 +341,6 @@ span.stars {
 			display: none;
 		}
 	}
-
-
 
 	/// the filter button with this class appears when using small screens
 	.mobile-show-facets {
@@ -353,6 +356,7 @@ span.stars {
 
 	#query {
 		font-size: 14px;
+		transform: translate(-50%, -40%);
 	}
 
 	.facet-column {
@@ -377,7 +381,7 @@ span.stars {
 
 		.hit-details {
 			width: 100%;
-			min-width: 200px;
+			min-width: 165px;
 			height: 25px;
 			font-size: 13px;
 			white-space: nowrap; 
@@ -422,5 +426,11 @@ span.stars {
 
 	.shown {
 		display: block;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.hit-content {
+		width: 60%;
 	}
 }
