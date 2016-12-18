@@ -1,0 +1,17 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    algoliasearch (1.12.4)
+      httpclient (~> 2.8.2.4)
+      json (>= 1.5.1)
+    httpclient (2.8.2.4)
+    json (2.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  algoliasearch
+
+BUNDLED WITH
+   1.11.2

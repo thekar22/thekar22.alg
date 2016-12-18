@@ -1,0 +1,426 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@mixin font() {
+	font-family: "Open Sans";
+}
+@mixin hover($r,$g,$b,$a) {
+		content: '';
+		position: absolute;
+		width: 110%;
+		height: 98%;
+		background: rgba($r,$g,$b,$a);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -58%);
+		border-radius: 4px;
+		opacity: 0.8;
+}
+
+$starsize: 19px;
+$searchbackground: #1C6A8E;
+
+html {
+	@include font();
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+    background-image: url("../../resources/graphics/background.png");
+    background-repeat: repeat-y repeat-x;
+}
+
+body {
+	@include font();
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.container {
+	position: absolute;
+	height: 596px;	
+	width: 925px;
+
+	top: 50%;
+	left: 50%;
+
+  	overflow: none;
+	background: white;
+	transform: translate(-50%, -52%);
+	box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.2), 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/// search box styling
+
+.search {
+	position: relative;
+	height: 100px;
+	background: $searchbackground;
+}
+
+#query {
+	position: absolute;
+	height: 50px;
+	width: 94%;
+	padding: 18px;
+
+	top: 50%;
+	left:50%;
+
+	box-sizing: border-box;
+	border-radius: 3px;
+	transform: translate(-50%, -50%);
+}
+
+input {
+	-webkit-appearance: none; box-shadow: none !important; 
+}
+
+textarea, input { 
+	margin: 0;
+	padding: 10px;
+	
+	border: none;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+/// main content
+
+.main {
+	display: flex;
+	height: 496px;
+}
+
+/// left column
+
+.facet-column {
+	min-width: 232px;
+	padding: 38px 30px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+/// hits column and contents
+
+#stats {
+	position: relative;
+	font-weight: 900;
+
+	&:after {
+		position:absolute;
+		height:1px;
+		width:53%;
+		content: '';
+
+		right:0px;
+		bottom: 0px;
+		background: rgba(0, 0, 0, 0.1);	
+	}
+}
+
+.found-time {
+	font-size: 14px;
+	font-weight: 100;
+}
+
+.hits-column {
+	padding: 38px 40px 40px;
+	padding-right: 30px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 100%;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.hit-container {
+	margin-top: 15px;
+}
+
+.hit {
+	font-size: 0;
+	padding: 8px 0;
+	cursor: pointer;
+}
+
+.hit-image {
+	display: inline-block;
+	width: 90px;
+
+	img {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		max-width: 100%;
+		border-radius:5px;
+	}
+}
+
+.hit-content {
+	font-size: 13px;
+	font-weight: 300;
+	display: inline-block;
+	width: 70%;
+	margin-left: 20px;
+	margin-top: -3px;
+	vertical-align: top;
+
+	.hit-row {
+		position:relative;
+		margin-bottom: 5px;
+	}
+
+	.hit-price {
+		font-weight: normal;
+		margin-top: 0;
+	}
+
+	.hit-name {
+		margin-top: 0;
+		font-size: 18px;
+		font-weight: 800;
+	}
+
+	.hit-rating {
+		color: rgba(255, 155, 77, 1);
+		font-size:16px;
+	}
+
+	.hit-details {
+		font-size: 16px;
+		color: rgba(0, 0, 0, 0.4)
+	}
+}
+
+.show-more {
+	display: block;
+	height: 42px;
+	width: 220px;
+	margin: 10px auto 0px;
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: white;
+	border-radius: 5px;
+	font-size: 16px;
+	color: rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+
+/// Contents of left column (facet-column)
+
+.facet-wrapper {
+	margin-bottom: 20px;
+}
+
+.facet-title {
+	font-weight: 900;
+	font-size: 16px;
+	margin-bottom: 10px
+}
+
+.facet-item {
+	margin-left: 15px;
+	margin-bottom: -1px;
+	display: block;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+	
+	&:hover {
+		color: white;
+
+		.facet-value {
+			color: white;
+		}
+	}
+
+	&:hover:before {
+		@include hover(40,151,197,1.0);
+	}
+	&.rating {
+		width: 100px;
+	}
+	&.checked {
+		color: white;
+
+		.facet-value {
+			color: white;
+		}
+	}
+	&.checked:before {
+		@include hover(25,136,182,1.0);
+	}
+}
+
+.facet-key {
+	font-size: 15px;
+	position: absolute;
+	display: inline-block;
+}
+
+.facet-value {
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.4);
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+}
+
+.reviews-count {
+	color: rgba(0, 0, 0, 0.4);
+	right: 0px;
+	font-size: 16px;
+	margin-left: 10px;
+	position: absolute;
+	left: 130px;
+}
+
+/// Star styling
+
+.stars_facet > label:nth-child(1) {
+	margin-top: 15px;
+}
+
+.stars_facet {
+	width: 130px
+}
+
+.star-rating {
+	position: absolute;
+	top: 2px;
+	left: 29px;
+}
+
+span.stars {
+    display: inline-block;
+    width: 100px;
+    background: url("../../resources/graphics/stars-icons.png") 0 0px no-repeat;
+    background-size: 100px 36px;
+    height: 18px;
+    span {
+		display: inline-block;
+		height: 17px;
+		width: 50px;
+		background: url("../../resources/graphics/stars-icons.png") 0 -18px no-repeat;
+		background-size: 100px 36px;
+    }
+}
+
+.mobile-show-facets {
+	display: none;
+}
+
+/// media query for any non-desktop device
+@media screen and (max-width: 959px) {
+	.container {
+		width: 100%;
+		height: 100%;
+		min-width: 350px;
+	}
+
+	.main {
+		position: relative;
+		display: block;
+		overflow: scroll;
+		height: 530px;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+
+
+	/// the filter button with this class appears when using small screens
+	.mobile-show-facets {
+		position: relative;
+		height: 40px;
+		display: block;
+		text-align: center;
+		color: rgba(235,235,235,1);
+		background: #6faac7;
+		margin: 0 auto;
+		cursor: pointer;
+	}
+
+	#query {
+		font-size: 14px;
+	}
+
+	.facet-column {
+		display: none;
+		margin: 0 auto;
+		border-right: none;
+		padding: 25px 30px;
+	}
+
+	.hits-column {
+		position: relative;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.hit-content {
+		width: 60%;
+
+		.hit-name {
+			font-size: 15px;
+		}
+
+		.hit-details {
+			width: 100%;
+			min-width: 200px;
+			height: 25px;
+			font-size: 13px;
+			white-space: nowrap; 
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+
+	.reviews-count {
+		font-size: 13px;
+		margin-top: 2px;
+	}
+
+	.show-facet-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.show-more {
+		margin: 15px auto 0px;
+	}
+
+	.review-count-text {
+		display: none;
+	}
+
+	.found-time {
+		display: none;
+	}
+
+	#stats:after {
+		display: none;
+	}
+
+	/// hidden and shown classes toggled by filter button (only shown on smaller screen size)
+	/// used to switch between facet and hit columns
+	.hidden {
+		display: none;
+	}
+
+	.shown {
+		display: block;
+	}
+}
